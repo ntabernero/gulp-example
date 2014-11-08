@@ -1,5 +1,7 @@
 ## https://github.com/jdcauley/gulp-example
 
+### [@jdcauley](https://twitter.com/jdcauley)
+
 Building with Gulp.js is a matter of writing a little JavaScript.
 
 First things first, if you don't have Node.js ready you'll need that.
