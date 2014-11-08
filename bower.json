@@ -1,0 +1,25 @@
+{
+  "name": "gulp-test",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jdcauley/gulp-example",
+  "authors": [
+    "jdcauley <jordan@cauley.co>"
+  ],
+  "description": "simple example for wordcamp",
+  "main": "index.html",
+  "keywords": [
+    "gulp",
+    "bower",
+    "etc"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/src/dependencies",
+    "test",
+    "tests"
+  ]
+}
