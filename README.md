@@ -1,4 +1,6 @@
-Building with Gulp.js is a matter of writing a little JavaScript. 
+## https://github.com/jdcauley/gulp-example
+
+Building with Gulp.js is a matter of writing a little JavaScript.
 
 First things first, if you don't have Node.js ready you'll need that.
 
@@ -12,7 +14,7 @@ npm init
 ```
 And now we have a package.json
 
-So you can add Gulp to the project with: 
+So you can add Gulp to the project with:
 ```
 npm install gulp --save-dev
 ```
@@ -24,7 +26,7 @@ npm install -g gulp
 
 Pick some tasks and define them.
 ```
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 var watch = require('gulp-watch'); // Better Watch
 var path = require('path'); // Needed for Less
 var less = require('gulp-less');
@@ -34,10 +36,10 @@ var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var uglify = require('gulp-uglify'),
 var concat = require('gulp-concat'),
-    
+
 ```
 
-Define a Task: 
+Define a Task:
 ```
 gulp.task('css', function(){
 
@@ -58,8 +60,8 @@ gulp.task('css', function(){
     }))
     .pipe(gulp.dest('assets/css'));
 
-}); 
-    
+});
+
 ```
 Set a default task
 
@@ -69,5 +71,3 @@ gulp.task('default', function(){
   gulp.watch('assets/**/*.js', ['js']);
 });
 ```
-
-
