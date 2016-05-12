@@ -2,6 +2,9 @@
   "name": "gulp-test",
   "version": "0.0.1",
   "homepage": "https://github.com/jdcauley/gulp-example",
+  "dependencies": {
+    "bootstrap": "~3.0.0"
+  },
   "authors": [
     "jdcauley <jordan@cauley.co>"
   ],
