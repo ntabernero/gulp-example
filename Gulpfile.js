@@ -12,7 +12,7 @@ var merge = require('merge-stream');
 
 gulp.task('default', ['production']);
 
-gulp.task('css', ['bar', 'foo'], function(){
+gulp.task('css', ['delayedBar', 'foo'], function(){
   return gulp.src('assets/src/less/app.less')
   .pipe(less({
     paths: [path.join(__dirname, 'less', 'includes') ]
@@ -28,7 +28,7 @@ gulp.task('foo', function(cb){
     console.log('foo');
     cb();
 });
-gulp.task('bar', function(cb){
+gulp.task('delayedBar', function(cb){
     setTimeout(function() {
         console.log('bar');
         cb();
