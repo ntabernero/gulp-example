@@ -9,6 +9,8 @@ var stylish = require('jshint-stylish');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 
+gulp.task('default', ['production']);
+
 gulp.task('css', function(){
   gulp.src('assets/src/less/app.less')
   .pipe(less({
@@ -28,7 +30,7 @@ gulp.task('js', function(){
   .pipe(gulp.dest('assets/js'));
 });
 
-gulp.task('production', function(){
+gulp.task('production', ['js', 'css'], function(){
   gulp.src('assets/css/*.css')
   .pipe(minify())
   .pipe(concat('main.min.css'))
@@ -40,6 +42,6 @@ gulp.task('production', function(){
   .pipe(gulp.dest('assets/js'));
 });
 
-gulp.task('default', function(){
+gulp.task('watch', function(){
   gulp.watch('assets/src/**', ['css', 'js']);
 });
