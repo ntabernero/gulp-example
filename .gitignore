@@ -2,5 +2,6 @@
 node_modules
 assets/src/dependencies
 assets/css
+/npm-debug.log
 assets/js
 /gulp-example.iml
